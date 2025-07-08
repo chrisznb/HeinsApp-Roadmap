@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeinsApp Roadmap - KRITISCHER SPRINT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="alert-banner">
+            <h2>⚠️ KRITISCHER STATUS ⚠️</h2>
+            <div class="countdown" id="countdown">Verbleibende Zeit bis Launch: Berechne...</div>
+        </div>
+
+        <div class="budget-section">
+            <h2 style="text-align: center; color: #D10C27; margin-bottom: 30px;">💰 Budget-Kalkulation</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div class="budget-card">
+                    <h3 style="color: #D10C27; margin-bottom: 20px;">Einnahmen</h3>
+                    <div class="budget-line">
+                        <span>Setup-Gebühr (einmalig)</span>
+                        <span style="color: #22c55e; font-weight: 600;">+4.000€</span>
+                    </div>
+                    <div class="budget-line">
+                        <span>Support Jahr 1</span>
+                        <span style="color: #22c55e; font-weight: 600;">+1.500€</span>
+                    </div>
+                    <div class="budget-line" style="border-top: 2px solid #D10C27; padding-top: 10px; margin-top: 10px; font-weight: 700;">
+                        <span>Gesamt (netto)</span>
+                        <span style="color: #22c55e;">5.500€</span>
+                    </div>
+                </div>
+
+                <div class="budget-card">
+                    <h3 style="color: #D10C27; margin-bottom: 20px;">Ausgaben</h3>
+                    <div class="budget-line">
+                        <span>UG Gründung inkl. Stammkapital</span>
+                        <span style="color: #ef4444;">-1.000€</span>
+                    </div>
+                    <div class="budget-line">
+                        <span>Apple Developer Account</span>
+                        <span style="color: #ef4444;">-99€</span>
+                    </div>
+                    <div class="budget-line">
+                        <span>Google Play Developer</span>
+                        <span style="color: #ef4444;">-25€</span>
+                    </div>
+                    <div class="budget-line">
+                        <span>Hosting (12 Monate)</span>
+                        <span style="color: #ef4444;">-60€</span>
+                    </div>
+                    <div class="budget-line">
+                        <span>Domain (.de)</span>
+                        <span style="color: #ef4444;">-15€</span>
+                    </div>
+                    <div class="budget-line">
+                        <span>Sonstiges/Reserve</span>
+                        <span style="color: #ef4444;">-100€</span>
+                    </div>
+                    <div class="budget-line" style="border-top: 2px solid #D10C27; padding-top: 10px; margin-top: 10px; font-weight: 700;">
+                        <span>Gesamt</span>
+                        <span style="color: #ef4444;">-1.299€</span>
+                    </div>
+                </div>
+
+                <div class="budget-card">
+                    <h3 style="color: #D10C27; margin-bottom: 20px;">Gewinn & Steuern</h3>
+                    <div class="budget-line">
+                        <span>Rohgewinn</span>
+                        <span>4.201€</span>
+                    </div>
+                    <div class="budget-line">
+                        <span>Körperschaftsteuer (~15%)</span>
+                        <span style="color: #ef4444;">-630€</span>
+                    </div>
+                    <div class="budget-line">
+                        <span>Gewerbesteuer (~15%)</span>
+                        <span style="color: #ef4444;">-630€</span>
+                    </div>
+                    <div class="budget-line" style="border-top: 2px solid #D10C27; padding-top: 10px; margin-top: 10px; font-weight: 700;">
+                        <span>Gewinn nach Steuern</span>
+                        <span style="color: #22c55e;">2.941€</span>
+                    </div>
+                    <div class="budget-line" style="background: #fff5f5; padding: 10px; border-radius: 8px; margin-top: 15px;">
+                        <span><strong>Pro Person (4 Entwickler)</strong></span>
+                        <span style="color: #D10C27; font-weight: 700; font-size: 1.2em;">735€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px; background: #fff5f5; border-radius: 10px; border: 2px solid #D10C27;">
+                <h4 style="color: #D10C27; margin-bottom: 10px;">⚠️ Wichtige Hinweise:</h4>
+                <ul style="margin: 0; padding-left: 20px; color: #666;">
+                    <li>Bei ~50-60h Arbeitsaufwand = <strong>12-15€/Stunde</strong> pro Person</li>
+                    <li>Hosting-Kosten können je nach Anbieter variieren (5-20€/Monat)</li>
+                    <li>UG-Gründung dauert 3-4 Wochen - SOFORT starten!</li>
+                    <li>Apple Review kann 7-14 Tage dauern - früh einreichen!</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="header">
+            <h1>🚨 HeinsApp Sprint Roadmap</h1>
+            <p class="subtitle">8 Wochen bis zum Launch | Web 85% | Native 0% | DSGVO 0%</p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card critical">
+                <div class="stat-number" id="daysLeft">55</div>
+                <div class="stat-label">Tage bis Launch</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15%</div>
+                <div class="stat-label">Web-App fehlt noch</div>
+            </div>
+            <div class="stat-card critical">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Native Apps fehlen</div>
+            </div>
+            <div class="stat-card critical">
+                <div class="stat-number">0%</div>
+                <div class="stat-label">DSGVO/Security</div>
+            </div>
+        </div>
+        
+        <div class="critical-tasks">
+            <h2>🔥 KRITISCHE AUFGABEN - SOFORT STARTEN!</h2>
+            <div class="critical-list">
+                <div class="critical-item">
+                    <div>
+                        <h3>UG Gründung SOFORT</h3>
+                        <p>Notar, Handelsregister, Geschäftskonto - mindestens 3 Wochen Vorlauf!</p>
+                    </div>
+                    <span class="time-estimate">KRITISCH!</span>
+                </div>
+                <div class="critical-item">
+                    <div>
+                        <h3>DSGVO & Datenschutz</h3>
+                        <p>Datenschutzerklärung, Cookie-Banner, Consent Management, Audit-Log</p>
+                    </div>
+                    <span class="time-estimate">~20h Aufwand</span>
+                </div>
+                <div class="critical-item">
+                    <div>
+                        <h3>Security Implementation</h3>
+                        <p>Input Validation, XSS Protection, Rate Limiting, API Security</p>
+                    </div>
+                    <span class="time-estimate">~15h Aufwand</span>
+                </div>
+                <div class="critical-item">
+                    <div>
+                        <h3>Native App Development</h3>
+                        <p>React Native Setup, iOS/Android Apps, Push Notifications</p>
+                    </div>
+                    <span class="time-estimate">~40h Aufwand</span>
+                </div>
+                <div class="critical-item">
+                    <div>
+                        <h3>App Store Preparation</h3>
+                        <p>Screenshots, Descriptions, Review Guidelines, Zertifikate</p>
+                    </div>
+                    <span class="time-estimate">~10h Aufwand</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" style="--progress: 45%">
+                <span class="progress-text">45% Gesamtfortschritt</span>
+            </div>
+        </div>
+        
+        <div class="sprint-timeline">
+            <div class="week current-week" id="week1">
+                <div class="week-header">
+                    <h3 class="week-title">Woche 0: Business & Organisation</h3>
+                    <span class="week-date">SOFORT ERLEDIGEN!</span>
+                </div>
+                <div class="task-grid">
+                    <div class="task-card">
+                        <h4>UG Gründung</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-0-1">
+                                <label for="task-0-1">Gesellschaftsvertrag aufsetzen</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-0-2">
+                                <label for="task-0-2">Notar-Termin vereinbaren</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-0-3">
+                                <label for="task-0-3">Stammkapital einzahlen (1.000€)</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-0-4">
+                                <label for="task-0-4">Geschäftskonto eröffnen</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-0-5">
+                                <label for="task-0-5">Handelsregister-Eintragung</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="task-card">
+                        <h4>Web-App Finalisierung</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-1-6">
+                                <label for="task-1-6">TypeScript Errors fixen (3x @ts-ignore)</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-1-7">
+                                <label for="task-1-7">Console.logs entfernen</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-1-8">
+                                <label for="task-1-8">Loading States verbessern</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-1-9">
+                                <label for="task-1-9">Error Boundaries überall</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-1-10">
+                                <label for="task-1-10">PWA Manifest updaten</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="task-card">
+                        <h4>Projekt Setup</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-0-6">
+                                <label for="task-0-6">Vertrag mit Heinsberg finalisieren</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-0-7">
+                                <label for="task-0-7">Apple Developer Account (99€)</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-0-8">
+                                <label for="task-0-8">Google Play Account (25€)</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-0-9">
+                                <label for="task-0-9">Hosting einrichten</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-0-10">
+                                <label for="task-0-10">Domain registrieren</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="week">
+                <div class="week-header">
+                    <h3 class="week-title">Woche 1: DSGVO & Security Sprint</h3>
+                    <span class="week-date">8. - 14. Juli (DIESE WOCHE!)</span>
+                </div>
+                <div class="task-grid">
+                    <div class="task-card">
+                        <h4>DSGVO Compliance</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-1-1">
+                                <label for="task-1-1">Datenschutzerklärung erstellen</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-1-2">
+                                <label for="task-1-2">Cookie-Banner implementieren</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-1-3">
+                                <label for="task-1-3">Consent Management System</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-1-4">
+                                <label for="task-1-4">Datenverarbeitungsverzeichnis</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-1-5">
+                                <label for="task-1-5">Löschkonzept implementieren</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="task-card">
+                        <h4>Security Basics</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-2-1">
+                                <label for="task-2-1">Input Validation (Zod)</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-2-2">
+                                <label for="task-2-2">XSS Protection</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-2-3">
+                                <label for="task-2-3">CSRF Protection</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-2-4">
+                                <label for="task-2-4">Rate Limiting</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-2-5">
+                                <label for="task-2-5">Security Headers</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="week">
+                <div class="week-header">
+                    <h3 class="week-title">Woche 2-3: React Native Sprint</h3>
+                    <span class="week-date">15. - 28. Juli</span>
+                </div>
+                <div class="task-grid">
+                    <div class="task-card">
+                        <h4>Native App Setup</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-3-1">
+                                <label for="task-3-1">React Native Projekt erstellen</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-3-2">
+                                <label for="task-3-2">Navigation implementieren</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-3-3">
+                                <label for="task-3-3">API Integration</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-3-4">
+                                <label for="task-3-4">Offline-Funktionalität</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-3-5">
+                                <label for="task-3-5">Push Notifications</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="task-card">
+                        <h4>Platform-spezifisch</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-4-1">
+                                <label for="task-4-1">iOS Build & Testing</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-4-2">
+                                <label for="task-4-2">Android Build & Testing</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-4-3">
+                                <label for="task-4-3">App Icons & Splash Screens</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-4-4">
+                                <label for="task-4-4">Deep Linking Setup</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-4-5">
+                                <label for="task-4-5">Performance Optimierung</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="week">
+                <div class="week-header">
+                    <h3 class="week-title">Woche 4-5: Testing & Bugfixing</h3>
+                    <span class="week-date">29. Juli - 11. August</span>
+                </div>
+                <div class="task-grid">
+                    <div class="task-card">
+                        <h4>Quality Assurance</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-5-1">
+                                <label for="task-5-1">Unit Tests schreiben</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-5-2">
+                                <label for="task-5-2">Integration Tests</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-5-3">
+                                <label for="task-5-3">E2E Tests (Detox)</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-5-4">
+                                <label for="task-5-4">Beta Test mit Team</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-5-5">
+                                <label for="task-5-5">Performance Profiling</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="task-card">
+                        <h4>Bug Fixes</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-6-1">
+                                <label for="task-6-1">Critical Bugs fixen</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-6-2">
+                                <label for="task-6-2">Performance Issues lösen</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-6-3">
+                                <label for="task-6-3">UI/UX Verbesserungen</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-6-4">
+                                <label for="task-6-4">Code Review</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-6-5">
+                                <label for="task-6-5">Security Audit</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="week">
+                <div class="week-header">
+                    <h3 class="week-title">Woche 6-7: Store Submission & Launch</h3>
+                    <span class="week-date">12. - 25. August</span>
+                </div>
+                <div class="task-grid">
+                    <div class="task-card">
+                        <h4>App Store Vorbereitung</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-7-1">
+                                <label for="task-7-1">App Store Screenshots (6.5", 5.5")</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-7-2">
+                                <label for="task-7-2">App Beschreibung (DE)</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-7-3">
+                                <label for="task-7-3">Keywords optimieren</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-7-4">
+                                <label for="task-7-4">App Review Guidelines checken</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-7-5">
+                                <label for="task-7-5">TestFlight Beta einreichen</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="task-card">
+                        <h4>Google Play Vorbereitung</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-8-1">
+                                <label for="task-8-1">Feature Grafik (1024x500)</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-8-2">
+                                <label for="task-8-2">Play Store Listing</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-8-3">
+                                <label for="task-8-3">Datenschutzerklärung URL</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-8-4">
+                                <label for="task-8-4">Content Rating Fragebogen</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-8-5">
+                                <label for="task-8-5">Closed Testing Track</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="week">
+                <div class="week-header">
+                    <h3 class="week-title">Woche 8: Final Sprint & Launch</h3>
+                    <span class="week-date">26. August - 1. September</span>
+                </div>
+                <div class="task-grid">
+                    <div class="task-card">
+                        <h4>Launch Vorbereitung</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-9-1">
+                                <label for="task-9-1">Admin-Schulung Heinsberg</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-9-2">
+                                <label for="task-9-2">Support-Dokumentation</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-9-3">
+                                <label for="task-9-3">Monitoring Setup (Sentry)</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-9-4">
+                                <label for="task-9-4">Backup-Strategie</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-9-5">
+                                <label for="task-9-5">Launch-Checkliste durchgehen</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="task-card">
+                        <h4>Go Live!</h4>
+                        <ul class="task-list">
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-10-1">
+                                <label for="task-10-1">App Store Release</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-10-2">
+                                <label for="task-10-2">Play Store Release</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-10-3">
+                                <label for="task-10-3">Web-App Live schalten</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-10-4">
+                                <label for="task-10-4">Rechnung an Heinsberg</label>
+                            </li>
+                            <li class="task">
+                                <input type="checkbox" class="task-checkbox" id="task-10-5">
+                                <label for="task-10-5">🎉 FEIERN!</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-required">
+            <h2>🚨 SOFORT HANDELN!</h2>
+            <p>Die Zeit läuft! Diese kritischen Aufgaben MÜSSEN in den nächsten 7 Tagen gestartet werden.</p>
+            <div class="action-buttons">
+                <a href="#" class="action-button">UG Gründung starten</a>
+                <a href="#" class="action-button">Developer Accounts</a>
+                <a href="#" class="action-button">DSGVO Implementation</a>
+                <a href="#" class="action-button">Team-Meeting planen</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
